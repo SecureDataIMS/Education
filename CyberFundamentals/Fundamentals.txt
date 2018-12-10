@@ -270,3 +270,272 @@ CYBERSECURITY INRODUCTION AND OVERVIEW
 		SOFTWARE DEVELOPMENT SECURITY
 		
 		
+==============================================================================================================================================
+
+CYBERSECURITY CONCEPTS
+
+	RISK MANAGEMENT TERMS, CONCEPTS AND FRAMEWORKS
+	COMMON ATTACK TYPE AND VECTORS
+	GENERAL PROCESS AND ATTRIBUTES OF CYBTERATTACK
+	MALWARE
+	POLICIES AND PROCEDURES FRAMEWORK AND GUIDELINES
+	CYBERSECURITY CONTROL PROCESS
+	
+		
+		RISK 
+			The Combination of probability of an event and its consequences. Risk is mitigated through
+			the use of controls or safeguards.
+			
+			RESIDUAL RISK : Even after safeguards are in place, there will always be residual risk, defined
+			as the remaining risk after management has implemented a risk response.
+			
+			INHERENT RISK : The risk level or exposure without taking into account the actions that management
+			has taken or might take.
+			
+			APPROACHES TO RISK
+				There are a number methodologies available to measure risk
+					Risk tolerance
+					Size and Scope of the environment in question
+					Amount of data available
+					
+			[PIC : RISKMANAGEMENT_FRAMEWORK.PNG]
+			
+		THREAT
+			Anything that is capable of acting against an asset in a manner that can result in harm.
+			
+		ASSET
+			Something of either tangible or intangible value that is worth protecting, including people,
+			information, infrastructure, finances and reputation.
+			
+		VULNERABILITY 
+			A Weakness in the design, implementation, operation or internal control of a proces that could
+			expose the system to adverse threats from threat events.
+				
+			
+			
+			
+		COMMON ATTACK TYPE AND VECTORS
+			As attack vectors and methodologies continue to evolve, they represent a significant threat on 
+			the client side. Although some attacks are made at random with no particular traget in mind, 
+			there are also trageted attacks against recipients who have been reseaerched and identified as 
+			useful by attackers.
+			
+			[PIC : CyberThreatAgents.PNG]
+			
+			THEAT AGENTS
+				CORPORATIONS : Corporations have been known to breach security boundaries and perform 
+				malicious acts to gain a competitive advantage.
+				
+				NATION STATES : Nation states often target government and private entities with a high
+				level of sophistication to obtain intelligence or carry out other destructive activities.
+				
+				HACKTIVISTS : Although they often act independently, politically motivated hackers may
+				target specific individuals or organizations to achieve various ideological ends.
+				
+				CYBERTERRORISTS : Characterized by their willingness to use voilence to achieve their goals,
+				cyberterrorists frequently target critical infrastructures and government groups.
+				
+				CYBERCRIMINALS : Moticated by the desire for profit, these individuals are involved in 
+				fraudulent financial transactions.
+				
+				CYBERWARRIORS : Often likended to hackivists, cyberwarrior, also reffered to as cyberfighters,
+				and natinally motivied citizens who may act on behalf of a political party or agains another
+				political party that threatens them.
+				
+				SCRIPT KIDDIES :  Script kiddies are young individuals who are learning to hack; they may work
+				alone or with others and are parimarily involved in code injection and distributed denial-of-service
+				(DDoS) attacks.
+				
+				ONLINE SOCIAL HACKERS : Skilled in social engineering, these attackers are frequently involved in
+				cyberbullying, indentify theft and collection of other confidential information or credentials.
+				
+				EMPLOYEES : Although they typically have fairly low-tech methods and tools, dissatisfied current or 
+				former employees represent a clear cybersecurity risk. All of those attacks are adversarial,
+				
+				
+				
+				ATTACK ATTRIBUTES
+					While risk is measured by potential activity, an ATTACK is the actual occurence of a threat. More
+					specifically, an attack is an activity by a threat agent against an asset. From an attaker's point
+					of view, the asset is a TARGET, and the path or route used to gain access to traget(asset) is 
+					know as an ATTACK VECTOR.
+					
+						INGRESS ATTACK VECTOR -- Intruction into systems, some attackes are designed to remove data from 
+						systems and networks.
+						
+						EGRESS ATTACK VECTOR -- also known as Data Exfiltration
+						
+					The attacker must defeat any controls in place and/or use an EXPLOIT to take advan of a vulnerability
+					Another attribute of an attack is the ATTACK MECHANISM, or the method used to deliver the exploit.
+					Unless the attacker is personally performing the attack, the attack mechanism may invlove a PAYLOD, or
+					container, that delivers teh exploit to the traget.
+					
+					[PIC : AttackAttributes.PNG]
+					
+		
+		
+		GENERALIZED ATTACK PROCESS
+			While each attack is different, most adversarial theat events follow a common process.
+			
+			[PIC :  ThreatProcess.PNG]
+			
+			
+			PERFORM RESCONNAISSANCE : The adversary gathers information using variety of techniques,
+			which may include:
+				• Sniffing or Scanning the network perimeter
+				• Using Open source discovery of organizational information
+				• Running malware to identify potential tragets
+				
+			CREATE ATTACJ TOOLS : The adversary crafts the tools needed to carry out a future attack,
+			which may inlude:
+				• Phishing or Spear phishing attacks
+				• Crafting couterfeit website or certificates
+				• Create and operating false front organization to inject malicious components into the
+				supply chain
+				
+			DELIVER MALICIOUS CAPABILITIES : The adversary inserts or installs whatever is needed to carry
+			out the attach, which may include the following tactics:
+				• Introducting malware into organizational information systems
+				• Placing sobverted invdividuals into previleged positions whith the organization
+				• Installing sniffers or scanning devices on targeted networks and systems
+				• Inserting tampered hardware or critical components into organizational systems or supply chain
+			
+			EXPLOIT AND COMPROMISE : The adversary take advantage of information and systems in order to compromise
+			them, which may involve the following actions:
+				• Split tunneling or gaining physical acccess to organizational facilities
+				• Exfiltration data or sensitive information
+				• Exploiting multitenancy in a could environment
+				• Launching Zero-Day exploits
+				
+			CONDUCT AN ATTACK : The adversary coordinates attack tools or performs activities that inferfer with
+			organizational functions. Potential methos of attack include:
+				• Communication interception or wireless jamming attacks
+				• Denial-of-service (DoS) or distributed denial-of-service (DDoD) attacks
+				• Remote interference with or physical attacks on organizational facilities or infrastructure
+				• Session-hijacking or man-in-the-middle attacks
+				
+			ACHIEVE RESULTS : The adversary causes an adverse impact, which may include:
+				• Obtaining, unauthorized access to systems and/or sensitive information
+				• Degrading organizational services or capabilities
+				• Creating, corrupting or deleting critical data
+				
+			MAINTAIN A PRESENCE OR SET OF CAPABILITIES : The adversary continues to exploit and compromise the system
+			using the following techniques:
+				• Obfuscating adversary action or interfering with intrusion detection systems (IDSs)
+				• Adapting cyberattacks in response to organizational security measures
+				
+			COORDINATE A CAMPAIGN : The adversary coordinates a compaign against the organization that may involve the 
+			following measure:
+				• Multi-staged attacks
+				• Internal and external attacks
+				• Widespread and adaptive attacks
+				
+				
+				
+		NONADVERSARIAL THREAT EVENTS
+			Although most attackers are result of coordinated effort, there are other events than can pose
+			various risk to an organization. Some of the most common Nonadversarial threat events are:
+			
+			• Mishandling of criticl or sensitive information by authorized users
+			• Incorrect privilege settings
+			• Fire, flood, hurricane, windstorm or earthquake at primary or backup facilities
+			• Introduction of vulnerabilities into software products
+			• Pervasive disk errors or other problems caused by aging equipment
+			
+			
+			
+		MALWARE AND ATTACK TYPES 
+			MALWARE, also called malicious code, is software designed to gain access to targeted computer 
+			systems, steal infromation or disrupt computer operations. There are serveral type of malware,
+			the most important being computer VIRUSES, network WORMS and TROJAN HORSES, which are differentiated
+			by the way in which they operate or spread.
+			
+			VIRUSES : A computer virus is piece of code that can replicate itself and spread from one computer
+			to another. It requires intervention or execution to replicate and/or cause damage.
+			
+			NETWORK WORMS : A variant of Computer Viruses, which is essentially a piece of self-replicating
+			code designed to spread itself across computer networks. It does not require intervention or execution
+			to replicate.
+			
+			TROJAN HORSES : Which is a piece of malware that gain access to targeted system by hiding within a genuine
+			application. Trojan Horses are often broken down into categories reflecting their purposes.
+			
+			BOTNETS : A botet (a tern derived from "robot network") is a large, automated and distributed network of 
+			previously compromised computers that can be simyltaneously controlled to launch large-scale attacks
+			such as DoS, DDoS.
+			
+		A number of futher terms are also used to describe more specific types of malware, characterized by
+		their purposes. They include:
+		
+			SPYWARE : A class of malware that gathers information about a person or organization without
+			the knowledge of that person or organization.
+			
+			ADWARE : Designed to present advertisements (generally unwanted) to users.
+			
+			RANSOMWARE : A class of extortive malware that locks or encrypts data or functions and 
+			demands a payment to unlock them.
+			
+			KEYLOGGER : A class of malware that secretly records user keystorkes and, in some cases, screen content
+			
+			ROOTKIT : A class of malware that hides the existence of other malware by modifying the underlying OS.
+			
+		
+		OTHER ATTACK TYPES
+			In addition to malware, there are many other types of attacks, the MITRE Corporation publishes a 
+			catalouge of common attack patterns known as CAPEC - Common Attack Pattern Enumeration and 
+			Classification.
+			
+			APT - ADVANCED PERSISTENT THREATS : Complex and coordinated attacks directed at a specific entiry or
+			organization. They require an enormus amount of research and time, often taking onths or even years
+			to fully execute.
+			
+			BACKDOOR : A means of regaining access to a compromised system by installing software or configurating
+			existing software to enable remote acess under attacker-defined conditions.
+			
+			BRUTE FORCE ATTACK : An Attack made by trying all possible combinations of passwords or encryption
+			keys until the correct one is found.
+			
+			BUFFER OVERFLOW : Occurs when a program or process tries to store more data in a buffer than it was
+			intended to hold.
+			
+			CROSS-SITE SCRIPTING (XSS) : A type of injection in which malicious scripts are injected into otherwise
+			begign and trusted websites. XSS attacks occur when an attacket uses a web application to send malicious
+			code, generally in the form of a broswer side scripts, to a different end user.
+			
+			DENIAL-OF-SERVICE (DoS) ATTACK : An assault on a service from single sourec that floods it with so many
+			requests that it becomes overwhelmed and is either stopped completely or operates at a significantly
+			reduce rate.
+			
+			MAN-IN-THE-MIDDLE ATTACK : An attack strategy in which the attacker intercepts the communication steam
+			between two parts of the victim system and then replaces the traffic between the two components with 
+			the intruder's own, eventually assuming control of the commucation.
+			
+			SOCAIL ENGINEERING : Any attempt to exploit socal vulnerabilities to gain access to information and/or
+			sytems. It involves a "con game" that tricks other into divulging information or opening malicious software
+			or program.
+			
+			PHISHING : A type of electronic mail (email) attack that attempts to convince a user that the originator is 
+			genuine, but with the intention of obtaining information for use in social engineering.
+			
+			SPEAR PHISHING : An Attack where social engineering techniques are used to masuerade as a trusted party to 
+			obtain important information such as passwords from the victim
+			
+			SPOOFING : Faking the sending address of a transmission in order to gain illegal entry into secure sytem.
+			
+			SQL INJECTION : Crafted User-Controlled input consisting of SQL syntax is user without proper validation 
+			as part of SQL queries.
+			
+			ZERO-DAY EXPLOIT : A Vulnerability that is exploited before the software creator/vendor is even aware 
+			of its existence.
+			
+			
+				
+				
+				
+		
+			
+			
+		
+			
+			
+
