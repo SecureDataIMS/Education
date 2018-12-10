@@ -1,0 +1,272 @@
+CYBERSECURITY FUNDAMENTALS
+
+	CYBERSECURITY INRODUCTION AND OVERVIEW
+	CYBERSECURITY CONCEPTS
+	SECURITY ARCHITECTURE PRINCIPLES
+	SECURITY OF NETWORKS, SYSTEMS, APPLICATIONS AND DATA
+	INCIDENT RESPONSE
+	SECURITY IMPLICAATIONS AND ADOPTIONS OF EVEOLVING TECHNOLOGY
+	
+	
+OBJECTIVES 
+	• Understand basic cybersecurity concepts and definitions
+	• Understand basic risk management and risk assessment principles relating to cybersecurity threats
+	• Apply security architecture principles
+	• Identify components of a security architecture
+	• Define network security architecture concepts
+	• Understand malware analysis concepts and methodology
+	• Recognize the methodologies and techniques for detecting host- and network-based intrusions via intrusion
+	detection technologies
+	• Identify vulnerability assessment tools, including open source tools and their capabilities
+	• Understand system hardening
+	• Understand penetration testing principles, tools and techniques
+	• Define network systems management principles, models, methods and tools
+	• Understand remote access technology and systems administration concepts
+	• Distinguish system and application security threats and vulnerabilities
+	• Recognize system life cycle management principles, including software security and usability
+	• Define types of incidents (categories, responses and time lines for responses)
+	• Outline disaster recovery and business continuity planning
+	• Understand incident response and handling methodologies
+	• Understand security event correlation tools, and how different file types can be used for atypical behavior
+	• Recognize investigative implications of hardware, operating systems and network technologies
+	• Be aware of the basic concepts, practices, tools, tactics, techniques and procedures for processing digital forensic data
+	• Identify network traffic analysis methods
+	• Recognize new and emerging information technology and information
+		
+
+==============================================================================================================================================
+
+
+CYBERSECURITY INRODUCTION AND OVERVIEW
+
+	DEFINITION
+	OBJECTIVES
+	KEY BUSINESS AND TECHNOLOGY FACTORS
+	CYBERSECURITY ROLES AND GOVERNANCE
+	DOMAINS OF CYBERSECURITY
+	
+	
+	INTRODUCTION TO CYBERSECURITY
+		Computer security. Network security. Information security. Cybersecurity. All of these 
+		terms are used to describe the protection of information assets. the objective of 
+		information security is threefold, involving the critical components of confidentiality, 
+		integrity and availability.
+		
+		All three components are concerned with the protection of information. Confidentiality 
+		means protection from unauthorized access, while integrity means protection from 
+		unauthorized modification, and availability means protection from disruptions in access.
+		
+		In current era of security, there are references to both “cybersecurity” and 
+		“information security.” The terms are often used interchangeably, but in reality 
+		cybersecurity is a part of information security.
+		
+		Generally, cybersecurity refers to anything intended to protect enterprises and individuals
+		from intentional attacks, breaches, incidents and consequences. More specifically, 
+		cybersecurity can be defined as 
+		
+		“the protection of information assets by addressing threats to information processed, 
+		stored and transported by internetworked information systems.”
+		
+		
+		CYBERSECURITY AND SITUATIONAL AWARENESS
+			In order to successfully protect their systems and information, cybersecurity 
+			professionals must demonstrate a high degree of situational awareness. This 
+			type of awareness takes time to cultivate, because it usually develops through
+			experience within a specific organization.
+			
+			Central to this awareness is an understanding of key business and technology 
+			factors that affect information security. Numerous factors, both internal and 
+			external, can directly impact an organization and its security needs, including:
+				• Business plans and business environment
+				• Available information technology, security process or systems in particular
+				
+			With respect to technology, there are many factors that can impact security, such as:
+				• Platforms and tools used
+				• Network connectivity (internal, third-party, public)
+				• Level of IT complexity
+				• Operational support for security
+				• User community and capabilities
+				• New or emerging security tools
+				
+			When evaluating business plans and the general business environment, consider drivers, such as:
+				• Nature of business
+				• Risk tolerance
+				• Security profile
+				• Industry trends for security
+				• Mergers, acquisitions and partnerships
+					– Consider type, frequency and resulting level of integration
+				• Outsourcing services or providers
+		
+	
+	
+	DIFFERENCE BETWEEN INFORMATION SECURITY AND CYBERSECURITY 
+	
+		The terms “cybersecurity” and “information security” are often used interchangeably. 
+		Some use the term cybersecurity as a synonym for information security, IT security 
+		and information risk management.
+		
+		Information security deals with information, regardless of its format—it encompasses 
+		paper documents, digital and intellectual property in people’s minds, and verbal or 
+		visual communications.
+		
+		Cybersecurity, on the other hand, is concerned with protecting digital assets—everything 
+		from networks to hardware and information that is processed, stored or transported by 
+		internetworked information systems. Additionally, concepts such as nation-state-sponsored 
+		attacks and advanced persistent threats (APTs) belong almost exclusively to cybersecurity. 
+		It is helpful to think of cybersecurity as a component of information security.
+		
+		the term cybersecurity will be defined in this guide as protecting information assets by 
+		addressing threats to information processed, stored and transported by internetworked 
+		information systems.
+		
+		PROTECTING DIGITAL ASSETS
+			In their cybersecurity frameworks, both the National Institute of Standards and Technology (NIST) 
+			and the European Union Agency for Network and Information Security (ENISA) have identified 
+			five key functions necessary for the protection of digital assets. These functions coincide with 
+			incident management methodologies and include the following activities:
+			
+			• Identify: Use organizational understanding to minimize risk to systems, assets, data and capabilities.
+			• Protect: Design safeguards to limit the impact of potential events on critical services and infrastructure.
+			• Detect: Implement activities to identify the occurrence of a cybersecurity event.
+			• Respond: Take appropriate action after learning of a security event.
+			• Recover: Plan for resilience and the timely repair of compromised capabilities and services.
+			
+			
+	CYBERSECURITY OBJECTIVES
+	
+		CONFIDENTIALITY, INTEGRITY AND AVAILABILITY 
+		
+			Confidentiality is the protection of information from unauthorized access or disclosure. Different 
+			types of information require different levels of confidentiality, and the need for confidentiality 
+			can change over time.
+			Personal, financial and medical information require a higher degree of confidentiality than the 
+			minutes of a staff meeting, for example. Similarly, some companies need to protect information on 
+			competitive future products before their release but may need to make the same information public 
+			afterwards.
+			
+			Data must be protected from improper disclosure according to its sensitivity and applicable legal 
+			requirements. The confidentiality of digital information can be maintained using several different 
+			means, including access controls, file permissions and encryption.
+			
+			
+			
+			Integrity is the protection of information from unauthorized modification. For example, if a bank 
+			transfers US $10,000 to another financial institution, it is important that the amount does not 
+			change to US $100,000 during the exchange. 
+			
+			The concept of integrity also applies to software and configurations.Any violation of integrity is 
+			significant because it may be the first step in a successful attack against system availability or 
+			confidentiality. Contaminated systems and corrupted data must be dealt with immediately to assess 
+			the potential for further violation or damage. The integrity of digital assets can be controlled 
+			by logging, digital signatures, hashes, encryption and access controls.
+			
+			
+			
+			Availability ensures the timely and reliable access to and use of information and systems. This 
+			would include safeguards to make sure data are not accidentally or maliciously deleted. 
+			This is particularly important with a mission-critical system, because any interruptions in its 
+			availability can result in a loss of productivity and revenue.
+			
+			Similarly, the loss of data can impact management’s ability to make effective decisions and 
+			responses. Availability can be protected by the use of redundancy, backups and access control.
+		
+		[PIC : CIA_RelatedImpact.PNG]
+		
+		NONREPUDIATION
+			Confidentiality, integrity and availability are equally important factors in the process of ensuring 
+			nonrepudiation. In a digital context, nonrepudiation refers to the concept that a message or other 
+			piece of information is genuine.
+			It assures that the data’s integrity has been protected and that the party sending or receiving it 
+			cannot deny or repudiate that they sent or received it. Nonrepudiation is important in transactions 
+			that require trust, such as financial transactions and legal matters. Nonrepudiation is implemented 
+			through transactional logs and digital signatures.
+			
+			
+			
+	CYBERSECURITY ROLES
+		
+		GOVERNANCE, RISK MANAGEMENT AND COMPLIANCE
+		
+			Governance is the responsibility of the board of directors and senior management of the organization. 
+			A governanceprogram has several goals:
+				• Provide strategic direction
+				• Ensure that objectives are achieved
+				• Ascertain whether risk is being managed appropriately
+				• Verify that the organization’s resources are being used responsibly
+				
+			
+			Risk management is the process by which an organization manages risk to acceptable levels. 
+			Risk management requires the development and implementation of internal controls to manage and mitigate 
+			risk throughout the organization, including financial and investment risk, physical risk and cyberrisk.
+			
+			
+			Compliance is the act of adhering to, and the ability to demonstrate adherence to, mandated requirements 
+			defined by laws and regulations. It also includes voluntary requirements resulting from contractual 
+			obligations and internal policies.
+			
+		[PIC : CS_Roles.PNG]
+		
+		
+	CYBERSECURITY DOMAINS
+	
+		CYBERSECURITY CONCEPTS
+			This domain provides discussion of critical concepts such as:
+				• Basic risk management
+				• Common attack vectors and threat agents
+				• Patterns and types of attacks
+				• Types of security policies and procedures
+				• Cybersecurity control processes
+			All of these concepts are addressed in light of how they influence security policies and procedures 
+			relating to cybersecurity threats. Each topic considers various approaches with a focus on security 
+			best practices.
+			
+		
+		SECURITY ARCHITECTURE PRINCIPLES
+			This domain provides information that helps security professionals identify and apply the principles 
+			of security architecture. It discusses a variety of topics, including:
+				• Common security architectures and frameworks
+				• System topology and perimeter concepts
+				• Firewalls and encryption
+				• Isolation and segmentation
+				• Methods for monitoring, detection and logging
+		
+		
+		SECURITY OF NETWORKS, SYSTEMS, APPLICATIONS AND DATA
+			This domain addresses basic system hardening techniques and security measures, including:
+				• Process controls
+					– Risk assessments
+					– Vulnerability management
+					– Penetration testing
+				• Best practices for securing networks, systems, applications and data
+					– System and application security threats and vulnerabilities
+					– Effective controls for managing vulnerabilities
+					
+		
+		INCIDENT RESPONSE
+			This domain articulates the critical distinction between an event and an incident. More importantly, 
+			it outlines the steps necessary when responding to a cybersecurity incident. In doing so, it covers 
+			the following topics:
+				• Incident categories
+				• Disaster recovery and business continuity plans
+				• Steps of incident response
+				• Forensics and preservation of evidence
+				
+		
+		SECURITY IMPLICAATIONS AND ADOPOTIONS OF EVEOLVING TECHNOLOGY
+			This domain outlines the current threat landscape, including a discussion of vulnerabilities associated 
+			with the following emerging technologies:
+				• Mobile devices
+				• Cloud computing and storage
+				• Digital collaboration
+	
+	
+		SECURITY AND RISK MANAGEMENT
+		ASSET SECURITY
+		SECURITY ARCHITECTURE AND ENGINEERING
+		COMMUNICATION AND NETWORK SECURITY
+		IDENTITY AND ACCESS MANAGEMENT
+		SECURITY ASSESSMENT AND TESTING
+		SECURITY OPERATIONS 
+		SOFTWARE DEVELOPMENT SECURITY
+		
+		
