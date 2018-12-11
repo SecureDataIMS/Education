@@ -275,9 +275,8 @@ CYBERSECURITY INRODUCTION AND OVERVIEW
 CYBERSECURITY CONCEPTS
 
 	RISK MANAGEMENT TERMS, CONCEPTS AND FRAMEWORKS
-	COMMON ATTACK TYPE AND VECTORS
+	COMMON ATTACK TYPE, THREAT VECTORS, PATTERNS AND TYPES OF ATTACK
 	GENERAL PROCESS AND ATTRIBUTES OF CYBTERATTACK
-	MALWARE
 	POLICIES AND PROCEDURES FRAMEWORK AND GUIDELINES
 	CYBERSECURITY CONTROL PROCESS
 	
@@ -354,23 +353,23 @@ CYBERSECURITY CONCEPTS
 				
 				
 				
-				ATTACK ATTRIBUTES
-					While risk is measured by potential activity, an ATTACK is the actual occurence of a threat. More
-					specifically, an attack is an activity by a threat agent against an asset. From an attaker's point
-					of view, the asset is a TARGET, and the path or route used to gain access to traget(asset) is 
-					know as an ATTACK VECTOR.
+			ATTACK ATTRIBUTES
+				While risk is measured by potential activity, an ATTACK is the actual occurence of a threat. More
+				specifically, an attack is an activity by a threat agent against an asset. From an attaker's point
+				of view, the asset is a TARGET, and the path or route used to gain access to traget(asset) is 
+				know as an ATTACK VECTOR			.	
 					
-						INGRESS ATTACK VECTOR -- Intruction into systems, some attackes are designed to remove data from 
-						systems and networks.
+					INGRESS ATTACK VECTOR -- Intruction into systems, some attackes are designed to remove data from 
+					systems and networks.
 						
-						EGRESS ATTACK VECTOR -- also known as Data Exfiltration
+					EGRESS ATTACK VECTOR -- also known as Data Exfiltration
 						
-					The attacker must defeat any controls in place and/or use an EXPLOIT to take advan of a vulnerability
-					Another attribute of an attack is the ATTACK MECHANISM, or the method used to deliver the exploit.
-					Unless the attacker is personally performing the attack, the attack mechanism may invlove a PAYLOD, or
-					container, that delivers teh exploit to the traget.
+				The attacker must defeat any controls in place and/or use an EXPLOIT to take advan of a vulnerability
+				Another attribute of an attack is the ATTACK MECHANISM, or the method used to deliver the exploit.
+				Unless the attacker is personally performing the attack, the attack mechanism may invlove a PAYLOD, or
+				container, that delivers teh exploit to the traget.
 					
-					[PIC : AttackAttributes.PNG]
+				[PIC : AttackAttributes.PNG]	
 					
 		
 		
@@ -527,6 +526,121 @@ CYBERSECURITY CONCEPTS
 			
 			ZERO-DAY EXPLOIT : A Vulnerability that is exploited before the software creator/vendor is even aware 
 			of its existence.
+			
+			
+			
+	
+		POLICIES AND PROCEDURES FRAMEWORK AND GUIDELINES
+		
+			Information security policies are primary element of cybersecurity and governace. They specify requirements
+			and define the roles and responsibilies of everyone in the organization, along with expected behaviors in 
+			various situations. 
+			Therefore, they must be properly created, accepted and validated by the board and executive management before
+			being communicated throughout the organization.
+			
+			POLICY LIFE CYCLE
+				Policy framework, another important aspect of information security policies is their lifecycle of 
+					DEVELOPMENT
+					MAINTAINANCE
+					APPROVAL and
+					EXCEPTION
+				Every compliance document should have a formal process of being created, reviewed, updated and approved.
+				Additionally, there may be legitimate need for an exception to a policy; therefore, a clear process of 
+				how an exception is approved and monitored in necessary.
+				
+			GUIDELINES
+				There are serveral attributes of good policies that should be considered:
+					• Security policies should be an articulation of a well-defined infromation security strategy
+					that capture the intent, expectations and direction of management.
+					• Policies must be clear and easily understood by all affected parties
+					• Policies should be short and concise, written in plain language.
+					
+			COMPLIANCE DOCUMENTS AND POLICY FRAMEWORKS
+			
+			COMPLIANCE DOCUMENTS
+				Compliance documents, such as policies, standards and procedures, outline the actions that are 
+				are requires or prohibited. Violations may be subject to disciplinary actions.
+			
+			POLICY FRAMEWORKS
+				The way that compliance documents relate to and support each other is call a policy framework.
+				A framework defines different types of document and what is contained in each. Organizations may
+				may have smiple or relatively comple policy frameworks depending on their unique needs.
+				
+				[PIC : ComplianceDocTypes.PNG]
+				
+			TYPES Of INFORMATION SECURITY Policies
+				The number and type of policies an organization chooses to implement varies based on the organization's
+				size, culture, risk, regulatory requirements and complexity of operations.
+				
+			GENERAL INFORMATION SECURITY POLICY 
+				COBIT 5 - Control Objectives for Information and Related Technologies
+				[PIC : InformationSecurityPolicySet.PNG]
+					
+					ACCESS CONTROL POLICY
+					PERSONAL INFORMATION SECURITY POLICY
+					SECURITY INCIDENT RESPONSE POLICY
+					
+		CYBERSECURITY CONTROLS
+			Cybersecurity is a dynamic and ever-changing environment and therefore requires continuous monitoring,
+			Updating, testing, patching and changing as technology and business evolve. These controls are critical
+			to maintaining security within any organization's IT infrastructure.
+			
+			IDENTITY MANAGEMENT
+				Key objective of IM is to centralize and standardize this process so that it becomes a consistent
+				and common service across the organization.
+				IM is comprised of many components that provide a collective and common infrastructure, including
+				directory services, authenticaation services (validating who the user is) and authorization 
+				services (ensuring the user has appropriate privileges to access systems based on personalized
+				profile). It also includes user-management capabilities, such as user provisioning and deprovisioning.
+				
+			PROVISIONING AND DEPROVISIONING
+				User provisioning is part of the organization's hiring process where user account are created.
+				Passwords and access control rights are generally assigned based on the job duties of the user.
+				This can be complicated process, as users may need access to many different resources such as systems,
+				databases, email, applications and remote services, each of which has its own access control rights,
+				passwords, encryption keys or other authorization and authenticaation requirements.
+				
+			AUTHORIZATION
+				The authorization process used for access control requires that the system be able to identify and
+				differentiate amond user. Access rules (authorization) specify who can access what.
+				
+			ACCESS CONTROL LISTS
+				To provide security authorizations for the files and facilities listed previously, logical access
+				control mechanisms untilize access authorization tables, also reffered to as access control list (ACL)
+				or acccess control tables. ACL refer to a register of users (including groups, machines and process)
+				who have permission to use a particular system resources
+				
+			ACCESS LISTS
+				Access lists filter traffic at router interfaces based on specified criteria, thus afforing back
+				network security. Without access list, router pass all packets.
+				
+			PRIVILEGED USER MANAGEMENT
+				Privileged access permits authorized users to maintain and protect system and networks. Privileged
+				users can often access any infromation stored within a system, which means they can modify or circumvent
+				existing safeguards such as access control and logging.
+				
+			CHANGE MANAGEMENT
+				Change management is essential to the IT infrastructure. Its purpose is to ensure that changes to processes,
+				systems, software, applications, platforms and configuration are introduces in an orderly, controlled
+				manner.
+				
+			CONFIGURATION MANAGEMENT
+				Maintaining the security configurations or network devices, system, applications and other IT resources
+				is critically important to ensure security controls are properly installed and maintained.
+				
+			PATCH MANAGEMENT
+				Patches are solutions to software programming errors. In many cases, security vulnerabilities are introduced
+				by coding errors. Therefore, it is vital that software bugs that identified as security vulnerabilities be
+				patched as soon as possible.
+				Failure to apply patches to know security vulnerabilities is most common cause of security breaches. Patching
+				is there an important part of vulnerability management, and organization must setup proess to identify patches
+				that are relevant to their IT infrastructure.
+				Once a necessary patch is identified, it should be tested to ensure it doest not negatively impact operations.
+				After the patch has been verified, it can be scheduled and installed where appropriate.
+			
+				
+				
+				
 			
 			
 				
