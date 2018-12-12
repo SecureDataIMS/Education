@@ -568,7 +568,11 @@ CYBERSECURITY CONCEPTS
 				
 				[PIC : ComplianceDocTypes.PNG]
 				
-			TYPES Of INFORMATION SECURITY Policies
+				Some organizations may not implement all of these types of docuemtns. For example, smaller 
+				organizations may simply have policies and procedures; other may have policies, standards 
+				and procedures, but not guidelines 
+				
+			TYPES Of INFORMATION SECURITY POLICIES 
 				The number and type of policies an organization chooses to implement varies based on the organization's
 				size, culture, risk, regulatory requirements and complexity of operations.
 				
@@ -577,8 +581,23 @@ CYBERSECURITY CONCEPTS
 				[PIC : InformationSecurityPolicySet.PNG]
 					
 					ACCESS CONTROL POLICY
+						The access control policy provides proper access to internal and external stakeholders to 
+						accomplish business gosl. this can be measured by metrics such as the:
+							Number of access violations that exceeds the amount allowed
+							Amount of work distruption due to insufficient access rigths 
+							Number of segregation of duties incidents or audit findings 
+							
+						The Access Control Policy should cover the following topics among others:
+							Physical and logical access provisioning life cycle
+							Least privilege/need to know
+							Segragation of duties
+							Emergency access
+							
 					PERSONAL INFORMATION SECURITY POLICY
+						
 					SECURITY INCIDENT RESPONSE POLICY
+						This policy addresses the need to respons to incidents in a timely manner in order to recovery
+						business activites.
 					
 		CYBERSECURITY CONTROLS
 			Cybersecurity is a dynamic and ever-changing environment and therefore requires continuous monitoring,
@@ -602,7 +621,10 @@ CYBERSECURITY CONCEPTS
 				
 			AUTHORIZATION
 				The authorization process used for access control requires that the system be able to identify and
-				differentiate amond user. Access rules (authorization) specify who can access what.
+				differentiate amond user. Access rules (authorization) specify who can access what. For example,
+				access control is often based on least privilege, which means granting user only those accesses 
+				required to perform their duties. Access should be on a docuemnted need-to-know and need-to-do
+				basis by type.
 				
 			ACCESS CONTROL LISTS
 				To provide security authorizations for the files and facilities listed previously, logical access
