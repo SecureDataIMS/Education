@@ -662,16 +662,443 @@ CYBERSECURITY CONCEPTS
 			
 				
 				
+==============================================================================================================================================
+
+SECURITY ARTHICTECTURE PRINCIPLES
+
+	PERIMETER SECURITY CONCEPTS
+	SECURITY ARTHICTECTURE AND FRAMEWORKS
+	THE OSI MODEL AND TCP/IP COMMUNICATION PROTOCOL
+	DEFENCE IN DEPTH
+	FIREWALL CONCEPTS AND IMPLEMENTATION
+	ISOLATION AND SEGMENTATION
+	INTRUSION DETECTION AND PREVENTION SYSTEMS
+	ANTIVIRUS AND ANTI-MALWARE
+	ENCRYPTION FUNDAMENTALS, TECHNIQUES AND APPLICATIONS
+	
+		OVERVIEW OF SECURITY ARCHITECTURE
+			Security architecture describe the structure, components, connection and layout of security control
+			with in organization's IT infrastructure. Organizations have different types of security architectures
+			that determine the particulars of various subsystems, products and applications. 
+			
+			Security architecture shows how defense in depth is implemented, as well as how layers of control 
+			are linked. It is therefore essential to designing and implementing security controls in any complex 
+			environment.
+			
+			Each component of a given system poses its own security risk. Because the topology of security 
+			architecture varies from one organization to another, there are a number of different variables and risk 
+			to consider when addressing the topology of a particular organization.
+			
+			THE VIRTUAL ORGANIZATION
+				Outsourcing, both onshore and offshore, is increasingly common as companies focus on core competencies
+				and ways to cut costs. From an information security point of view, these arrangements can present risk 
+				that may be difficult to quantify and potentially difficult to mitigate. 
+				Typically, both the resources and skills of the outsourced functions are lost to the organization, which
+				itself will present a set of risk Providers may operate on different standards and can be difficult to 
+				control. The security strategy should consider outsourced security services carefully to ensure either 
+				that they are not a critical single point of failure or that there is a viable backup plan in the event 
+				of service provider failure.
+				
+			THE SECURITY PERIMETER
+				Many current security controls and architectures were developed with the concept of a 
+				perimeter—a well-defined (if mostly virtual) boundary between the organization and the outside world. 
+				In these models of cybersecurity, the focus is network- or system-centric. In the system-centric model, 
+				the emphasis is on placing controls at the network and system levels to protect the information stored 
+				within. An alternative model is data-centric, which emphasizes the protection of data regardless of its 
+				location.
+				
+				An important component of the security perimeter is the Internet perimeter. This perimeter ensures secure 
+				access to the Internet for enterprise employees and guest users residing at all locations, including those 
+				involved in telecommuting or remote work. In order to provide security of email, front-end mobile and web apps, 
+				domain name system (DNS), etc., the Internet perimeter should:
+				
+					• Route traffic between the enterprise and the Internet
+					• Prevent executable files from being transferred through email attachments or HTTP responses
+					• Monitor network ports for rogue activity
+					• Detect and block traffic from infected internal end points
+					• Control user traffic bound toward the Internet
+					• Identify and block anomalous trafﬁc and malicious packets recognized as potential attacks
+					• Eliminate threats such as email spam, viruses and worms
+					• Enforce ﬁltering policies to block access to web sites containing malware or questionable content
+					
+				The perimeter should also provide protection for virtual private networks (VPNs), wide area networks (WANs) 
+				and wireless local area networks (WLANs)
+					
+					• Terminate VPN traﬁ'ic from remote users
+					• Provide a hub for terminating VPN trafﬁc from remote sites
+					• Terminate traditional dial—in users
+				
+				VPN traffic is ﬁrst filtered at the egress point to the speciﬁc IP addresses and protocols that are part 
+				of the VPN service. A remote user can only gain access alter being authenticated.
 				
 			
+		
+		SECURITY ARCHITECTURES AND FRAMEWORKS
+			A great number of architectural approaches currently exist, and many of them have evolved from the development 
+			of enterprise architecture. Although their specific details may differ, they all generally aim to articulate 
+			what processes a business performs and how those processes are executed and secured. They articulate the 
+			rganization, roles, entities and relationships that exist or should exist to perform a set of business processes.
 			
+			Similarly, models of security architecture typically fall into two categories: 
+				PROCESS MODELS
+					Process Models allow a great deal of ﬂexibility in how each element of the architecture is developed. 
+					The essence of a framework is to describe the elements of architecture and how they relate to one another
+				
+				FRAMEWAORK MODELS
+					Process model is more directive in its approach to the processes used for the various elements.
+
+			
+			
+			SABSA AND THE ZACHMAN FRAMEWORK
+				Zachman framework approach of developing a who, what, why, where, when and how matrix is shared by 
+				Sherwood Applied Business Security Architecture (SABSA). 
+				
+				[PIC : SABSA.PNG]
+				
+			THE OPEN GROUP ARCHITECTURE FRAMEWORK (TOGAF)
+				Another architecture framework is The Open Group Architecture Framework (TOGAF). Developed by 
+				The Open Group in the 1990s, this high-level and holistic approach addresses security as an 
+				essential component of the overall enterprise design. TOGAF’s objective is to ensure that 
+				architectural development projects meet business objectives, that they are systematic and 
+				that their results are repeatable. 
+				
+				[PIC : TOFAG.PNG]
+
 				
 				
+		THE OSI MODEL
+			The Open Systems Interconnect (OSI) model is used to describe networking protocols. Because it is rarely 
+			implemented in actual networks, it is considered a reference to standardize the development of actual networks.
+
+			OSI was the first nonproprietary open definition for networking.
+
+			The OSI model defines groups of ﬁmctionality required for network computers into layers, with each layer 
+			implementing a standard protocol for its functionality. 
+			
+			[PIC : OSIMODEL.PNG]
+			
+			
+			
+			TCP/IP
+				The protocol suite used as the de facto standard for the Internet is known as the 
+				Transmission Control Protocol/Internet Protocol (TCP/IP). The TCP/IP suite includes 
+				both network-oriented protocols and application support protocols. 
+				[PIC : TCPIP.PNG]
+				
+			ENCAPSULATION
+				Encapsulation is the process of adding addressing information to data as it is transmitted down the 
+				OSI stack. Each layer relies on the services provided by the layer below. Each layer of the OSI model 
+				only communicates with its destination peer. It does so using datagrams or Protocol Data Units (PDUs). 
+				
+				Upper layer data are passed down to the transport layer as segments and are “wrapped” with a header 
+				for identiﬁcation.
+
+				These segments are passed down to the network layer as packets again with a header. Data are broken 
+				down to frames at the data link layer and also have control information appended. At the physical 
+				layer, data take the form of bits (ls and Os) for delivery to destination network.
+
+				Once at the destination—each layer on the receiving end strips off the appropriate addressing information
+				and passes it up the OSI stack until the message is delivered. This process is called decapsulation.
+				
+				[PIC : OSIModel_ISO.PNG]
 				
 		
-			
-			
 		
+		DEFENSE IN DEPTH
+		
+			Because no single control or countermeasure can eliminate risk, it is often important to use several controls 
+			to protect an asset. This process of layering defenses is known as defense in depth, but it may also be called 
+			protection in depth and security in depth. It forces an adversary to defeat or avoid more than one control to 
+			gain access to an asset.
+
+			Defense in depth is an important concept in designing an effective information security strategy or architecture. 
+			When designed and implemented correctly, multiple control layers provide multiple opportunities for monitoring to
+			detect the attack. Adding additional controls to overcome also creates a delay so that the attack may be interrupted
+			and prevented.
 			
+			The number and types of layers needed is a function of asset value, criticality, the reliability of each control 
+			and the degree of exposure. Excessive reliance on a single control is likely to create a false sense of confidence. 
+			For example, a company that depends solely on a firewall can still be subject to numerous attack methodologies. 
+			
+			A further defense may be to use education and awareness to create a “human firewall,” which can constitute a critical 
+			layer of defense. Segmenting the network can constitute yet another defensive layer.
+
+			Using a defense in depth strategy for implementing controls has several advantages, including increasing the effort 
+			required for a successful attack and creating additional opportunities to detect or delay an attacker. There are 
+			several ways defense in depth can be implemented.
+			
+			[PIC : DefenseInDepth.PNG]
+			
+			Another way to think about defense in depth is from an architectural perspective of:
+			
+				HORIZONTAL DEFENSE IN DEPTH, where controls are placed in various places in the path of 
+				access for an asset, which is functionally equivalent to concentric ring model above.
+				
+				VERTICAL DEFENSE IN DEPTH, where controls are placed at different system layers—hardware, 
+				operating system, application, database or user levels.
+				
+			Using defense in depth techniques does require effective planning and understanding of each type’s strengths and weaknesses 
+			as well as how the controls interact. It is easy to create an overly complex system of controls, and too many layers can be 
+			as bad as too few. When developing defense in depth implementations, consider the following questions
+				• What vulnerabilities are addressed by each layer or control?
+				• How does the layer mitigate the vulnerability?
+				• How does each control interact with or depend on the other controls?
+				
+				
+				
+		FIREWALLS 
+			A FIREWALL is defined as a system or combination of systems that enforces a boundary between two or more networks, 
+			typically forming a barrier between a secure and an open environment such as the Internet. It applies rules to control
+			the type of networking traffic ﬂowing in and out. Most commercial firewalls are built to handle commonly used Internet 
+			protocols.
+			
+			Effective firewalls should allow individuals on the corporate network to access the Internet and simultaneously prevent 
+			others on the Internet from gaining access to the corporate network to cause damage. Most organizations follow a deny-all 
+			philosophy, which means that access to a given resource will be denied unless a user can provide a specific business 
+			reason or need for access to the information resource. The converse of this access philosophy— which is not widely 
+			accepted—is the accept—all philosophy, under which everyone is allowed access unless someone can provide areas for denying 
+			access.
+			
+			
+			FIREWALL GENERAL FEATURES
+				Along with other types of security, firewalls control the most vulnerable point between a corporate network and the 
+				Internet, and they can be as simple or complex as the corporate information security policy demands.
+				
+				There are many diﬁ'erent types of firewalls, but most of them enable organizations to:
+				
+					• Block access to particular sites on the Internet.
+					• Limit traffic on an organization’s public services segment to relevant addresses and ports.
+					• Prevent certain users from accessing certain servers or services.
+					• Monitor and record communications between an internal and an external network.
+					• Monitor and record communications between an internal network and the outside world to 
+					investigate network penetrations or detect internal subversion.
+					• Encrypt packets that are sent between different physical locations within an organization 
+					by creating a VPN over the Internet (e.g., IP security [lPSec], VPN turmels). The capabilities 
+					of some firewalls can be extended so they can also provide for protection against viruses and 
+					attacks directed to exploit known operating system vulnerabilities.
+					
+			NETWORK FIREWALL TYPES
+				Generally, the types of network firewalls available today fall into three categories:
+				
+					PACKET FILTERING FIREWALLS
+						First generation firewalls were packet filtering—based firewalls deployed between the private 
+						network and the Internet. In packet filtering, a screening router examines the header of every 
+						packet of data traveling between the Internet and the corporate network. Packet headers contain 
+						information, including the IP address of the sender and receiver, along with the port numbers 
+						(application or service) authorized to use the information transmitted. Based on that information, 
+						the router knows what kind of Internet service (e.g., web-based service or FTP) is being used to 
+						send the data as well as the identities of the sender and receiver of the data. Then, the router 
+						can prevent certain packets from being sent between the Internet and the corporate network. 
+						
+						For example, the router could block any trafﬁc to and from suspicious destinations. 
+						
+						[PIC : PacketFilterFirewall.PNG]
+						
+						Because their filtering rules are performed at the network layer, packet filtering ﬁrewalls are 
+						generally stable and simple. This simplicity has both advantages and disadvantages
+					
+						[PIC : PacketFilterFirewallPC.PNG]
+						
+						In light of these advantages and disadvantages, packet filtering is most effective when implemented 
+						with basic security and monitoring in mind.
+					
+						Some of the more common attacks against packet filter firewalls are:
+						
+							IP SPOOFING —In this type of attack, the attacker fakes the IP address of either an internal 
+							network host or a trusted network host. This enables the packet being sent to pass the rule 
+							base of the firewall and penetrate the system perimeter. 
+							If the spooﬁng uses an internal IP address, the firewall can be conﬁgured to drop the packet 
+							on the basis of packet ﬂow direction analysis. However, attackers with access to a secure or 
+							trusted external IP address can spoof on that address, leaving the ﬁrewall architecture 
+							defenseless.
+						
+							SOURCE ROUTING SPECIFICATION —This type of attack centers around the routing that an IP packet 
+							must take when it traverses the Internet from the source host to the destination host. In this 
+							process, it is possible to deﬁne the route so it bypasses the ﬁrewall. However, the attacker 
+							must know the IP address, subnet mask and default gateway settings to accomplish this. A clear 
+							defense against this attack is to examine each packet and drop packets whose source routing 
+							specification is enabled. Note that this countermeasure will not be effective if the topology 
+							permits a route that skips the choke point.
+						
+							MINIATURE FRAGMENT ATTACK —Using this method, an attacker fragments the IP packet into smaller 
+							ones and pushes it through the firewall. This is done with the hope that only the ﬁrst sequence 
+							of fragmented packets will be examined, allowing the others to pass without review. This is 
+							possible only if the default setting is to pass residual packets. Miniature fragment attacks 
+							can be countered by conﬁguring the firewall to drop all packets where IP fragmentation is enabled
+
+					
+					APPLICATION FIREWALL SYSTEMS
+						Packet filtering routers allow the direct ﬂow of packets between internal and external systems. 
+						The primary risk of allowing packet exchange between internal and external systems is that the 
+						host applications residing on the protected network’s systems must be secure against any threat 
+						posed by the allowed packets.
+
+						In contrast to packet ﬁltering routers, application— and circuit-level gateways allow information 
+						to ﬂow between systems but do not allow the direct exchange of packets. Therefore, application 
+						firewall systems provide greater protection capabilities than packet ﬁltering routers.
+						
+						The two types of application ﬁrewall systems sit atop hardened (i.e., tightly secured) operating 
+						systems such as Windows NT and UNIX. They work at the application level of the OSI model.
+
+						There are two types of application firewall systems:
+
+							APPLICATION-LEVEL GATEWAYS —Application—level gateways are systems that analyze packets through 
+							a set of proxies—one for each service (e.g., Hypertext Transmission Protocol [HTTP] proxy for 
+							web trafﬁc, FTP proxy). The implementation of multiple proxies, however, impacts network 
+							performance. When network performance is a  concern, a circuit-level gateway may be a better 
+							choice.
+
+							CIRCIIT-LEVEL GATEWAYS —Commercially, circuit—level gateways are quite rare. Because they use 
+							one proxy server for all services, they are more efﬁcient and also operate at the application 
+							level. There, TCP and UDP sessions are validated, typically through a single, general-purpose 
+							proxy before opening a connection. This differs from application—level gateways, which require 
+							a special proxy for each application—level service.
+
+						Both application firewall systems employ the concept of bastion hosting in that they handle all 
+						incoming requests from the Internet to the corporate network, such as FTP or web requests. 
+						Bastion hosts are heavily fortified against attack. When there is only one host handling incoming 
+						requests, it is easier to maintain security and track attacks. In the event of a break—in, only 
+						the ﬁrewall system is compromised, not the entire network.
+						
+						[PIC : ApplicationFirewall.PNG]
+						
+					
+					STATEFUL INSPECTION FIREWALLS
+						A stateful inspection firewall, also referred to as dynamic packet filtering, tracks the destination 
+						IP address of each packet that leaves the organization’s internal network. Whenever a response to a 
+						packet is received, its record isreferenced to ascertain whether the incoming message was made in 
+						response to a request that the organization sent out. This is done by mapping the source IP address 
+						of an incoming packet with the list of destination IP addresses that is maintained and updated. 
+						This approach prevents any attack initiated and originated by an outsider.
+						
+						[PIC : StatefullInspection.PNG]
+						
+						In contrast to application firewalls, stateful inspection firewalls provide control over the ﬂow of 
+						IP traffic. They do this by matching information contained in the headers of connecﬁon—oriented or 
+						eonnecﬁonless IP packets at  the transport layer against a set of rules authorized by the organization.
+						Consequently, they have advantages and disadvantages.
+
+							STATELESS VS. STATEFUL
+								Stateless ﬁltering does not keep the state of ongoing TCP connection sessions. In other words, 
+								it has no memory of what source port numbers the sessions’ client selected. Stateful ﬁrewalls 
+								keep track of TCP connections. The firewall keeps an entry in a cache for each open TCP 
+								connection. Stateless ﬁrewalls perform more quickly than stateful firewalls, but they are 
+								not as sophisticated.
+					
+					
+					EXAMPLES OF FIREWALL IMPLEMENTATIONS
+						Firewall implementations can take advantage of the functionality available in a variety of firewall 
+						designs to provide a robust layered approach in protecting an organization’s information assets. 
+						
+						Commonly used implementations available today include:
+						
+							SCREENED-HOST FIRWALL-UTILIZING a packet ﬁltering router and a bastion host, this approach 
+							implements basic network layer security (packet filtering) and application server security 
+							(proxy services). An intruder in this conﬁguration must penetrate two separate systems before
+							the security of the private network can be compromised.							
+							This firewall system is conﬁgured with the bastion host connected to the private network with
+							a packet ﬁltering router between the Intemet and the bastion host. Router filteﬁng rules allow
+							inbound traffic to access only the bastion host, which blocks access to internal systems.							
+							Since the inside hosts reside on the same network as the bastion host, the security policy of 
+							the organization determines whether inside systems are permitted direct access to the Internet, 
+							or whether they are required to use the proxy services on the bastion host.
+							
+							
+							DHUAL-HOMES FIREWALL —This is a ﬁrewall system that has two or more network interfaces, each 
+							of which is connected to a different network. A dual-homed ﬁrewall usually acts to block or 
+							filter some or all of the traffic trying to pass between the networks. 
+							A dual-homed firewall system is a more restrictive form of a screened—host firewall system in
+							which a dual-homed bastion host is conﬁgured with one interface established for information 
+							servers and another for private network host computers.
+							
+							
+							DEMILITARIZED ZONE(DMZ) or SCREEBED-SUBNET FIREWALL —This is a small, isolated network for an 
+							organization’s public servers, bastion host information servers and modem pools. 
+							The DMZ connects the untrusted network to the trusted network, but it exists in its own 
+							independent space to limit access and availability of resources. As a result,external systems 
+							can access only the bastion host and possibly information servers in the DMZ. 
+							The inside router manages access to the private network, accepting only traffic originating from 
+							the bastion host. The filtering rules on the outside router require the use ofproxy services by 
+							accepting only outbound trafﬁc on the bastion host. 
+							The key benefits of this system are that an intruder must penetrate three separate devices, 
+							private network addresses are not disclosed to the Internet, and internal systems do not have 
+							direct access to the Internet.
+							
+					
+					FIREWALL ISSUES
+						Problems faced by organizations that have implemented firewalls include the following:
+						
+							Configuration errors—Misconﬁgured ﬁrewalls may allow unknown and dangerous services to pass 
+							through freely.
+							
+							Monitoring demands—It is necessary to apply and review log settings appropriately, but 
+							monitoring activities may not always occur on a regular basis.
+							
+							Policy maintenance—Firewall policies may not be maintained regularly
+							
+							Vulnerability to application— and input-based attacks—Most firewalls operate at the network 
+							layer; therefore, they do not stop any application—based or input—based attacks, such as 
+							SQL injection and buffer—overﬂow attacks. Newer-generation firewalls are able to inspect 
+							trafﬁc at the application layer and stop some of these attacks.
+							
+							
+					
+					
+					NEXT GENERATION FIREWALLS
+						Next Generation Firewalls (N GFWs) are the newest type of firewall to enter the marketplace 
+						aimed at addressing two key limitations of earlier variants: 
+						
+							1) the inability to inspect packet payload and 
+							2) the inability to distinguish between types of web traffic.
+
+						An NGFW is an adaptive network security system capable of detecting and blocking 
+						sophisticated attacks.
+
+						NGFWs typically perform traditional functions such as packet ﬁltering, stateful inspection and 
+						network address translation (NAT), but introduce application awareness, incorporate deep packet 
+						inspection (DPI) technology and offer varying degrees of integrated threat protection, such as 
+						data loss prevention (DLP), intrusion prevention system (IPS), SSL/SSH inspection and web ﬁltering.
+						
+						APPLICATION AWARENESS is “the capacity of a system to maintain information about connected applications
+						to optimize their operation and that of any subsystems that they run or control.” This is important 
+						because discriminating between legitimate and malicious trafﬁc has become increasingly difficult amid 
+						the upsurge in web-based services. The ability of an NGFW to differentiate between types of web traffic
+						such as an authorized business web application and a streaming media site aids enforcement of corporate 
+						policies—regardless of port or protocol—and similarly offers insight to user activities and behavior.
+						
+						DPI allows for payload interrogation against signatures for known exploits, malware, etc. DPI affords 
+						a great deal of information about your trafﬁc, which aids in determination of normal uafﬁc making 
+						anomaly detection more effective, especially in more complex networks.
+
+						Depending on your particular organization, you may be asked to review, recommend or specify vendor 
+						solutions.
+						
+
+
+
+
+
+
+
+
+
+						
+					
+
+
+
+						
+						
+
+
+
+
+
+				
+
 			
 
+
+
+
+		
